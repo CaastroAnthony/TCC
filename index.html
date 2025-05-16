@@ -3,347 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descubra o Curso de DS</title>
-    <style>
-        /* CSS Reset e Estilos Gerais */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #6e48aa, #9d50bb);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        /* Navegação */
-        nav {
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 1rem 0;
-        }
-        
-        .nav-links li {
-            margin: 0 1.5rem;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #6e48aa;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #9d50bb;
-        }
-        
-        /* Seções */
-        section {
-            padding: 3rem 0;
-            background-color: white;
-            margin: 2rem 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-        
-        section:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        
-        h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #6e48aa;
-        }
-        
-        /* Cards de Disciplinas */
-        .disciplinas-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            padding: 0 1rem;
-        }
-        
-        .disciplina-card {
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .disciplina-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .disciplina-card h3 {
-            color: #9d50bb;
-            margin-bottom: 0.5rem;
-        }
-        
-        .semestre {
-            display: inline-block;
-            background-color: #6e48aa;
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-bottom: 1rem;
-        }
-        
-        /* Rodapé */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
-        }
-        
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .nav-links {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .nav-links li {
-                margin: 0.5rem 0;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <title>Descubra o Curso de DS - ETEC [Nome da Escola]</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Descubra o Curso de Desenvolvimento de Sistemas</h1>
-            <p class="subtitle">Tudo o que você precisa saber antes de ingressar</p>
+            <div class="logo-escola">
+                <img src="assets/images/logo-escola.png" alt="Logo da Escola">
+                <div>
+                    <h1>Descubra o Curso de Desenvolvimento de Sistemas</h1>
+                    <p class="subtitle">Tudo o que você precisa saber antes de ingressar na ETEC [Nome da Escola]</p>
+                </div>
+            </div>
         </div>
     </header>
     
     <nav>
         <div class="container">
             <ul class="nav-links">
-                <li><a href="#sobre">Sobre o Curso</a></li>
-                <li><a href="#disciplinas">Disciplinas</a></li>
-                <li><a href="#demonstracoes">Demonstrações</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="pages/sobre.html"><i class="fas fa-info-circle"></i> Sobre o Curso</a></li>
+                <li><a href="pages/disciplinas/todas.html"><i class="fas fa-book"></i> Disciplinas</a></li>
+                <li><a href="pages/demonstracoes/programacao.html"><i class="fas fa-code"></i> Demonstrações</a></li>
+                <li><a href="pages/depoimentos.html"><i class="fas fa-comments"></i> Depoimentos</a></li>
+                <li><a href="pages/quiz.html"><i class="fas fa-question-circle"></i> Quiz</a></li>
             </ul>
         </div>
     </nav>
     
     <div class="container">
         <section id="sobre">
-            <h2>Sobre o Curso de DS</h2>
-            <p>O curso de Desenvolvimento de Sistemas prepara profissionais para atuar no desenvolvimento de programas, aplicativos e sistemas computacionais. Durante o curso, você aprenderá:</p>
-            <ul>
-                <li>Lógica de programação e algoritmos</li>
-                <li>Desenvolvimento web e mobile</li>
-                <li>Banco de dados e estrutura de dados</li>
-                <li>Engenharia de software e metodologias ágeis</li>
-                <li>E muito mais!</li>
-            </ul>
+            <h2>Sobre o Curso de DS na Nossa Escola</h2>
+            <div class="sobre-content">
+                <img src="assets/images/laboratorio.jpg" alt="Laboratório de Informática" class="sobre-imagem">
+                <div>
+                    <p>O curso de Desenvolvimento de Sistemas na ETEC [Nome] prepara profissionais para o mercado de trabalho local, com foco nas necessidades das empresas da região.</p>
+                    <ul>
+                        <li>Duração: 3 semestres</li>
+                        <li>Período: Matutino/Noturno</li>
+                        <li>Infraestrutura: 2 laboratórios exclusivos</li>
+                    </ul>
+                    <a href="pages/sobre.html" class="btn-saiba-mais">Saiba mais sobre nossa estrutura</a>
+                </div>
+            </div>
         </section>
         
         <section id="disciplinas">
             <h2>Disciplinas do Curso</h2>
             <div class="disciplinas-grid">
-                <div class="disciplina-card">
+                <div class="disciplina-card" onclick="location.href='pages/disciplinas/logica.html'">
                     <span class="semestre">1º Semestre</span>
                     <h3>Lógica de Programação</h3>
-                    <p>Introdução aos conceitos fundamentais de programação, algoritmos e estruturas de controle.</p>
+                    <p>Ministrada pelo Prof. [Nome], com metodologia prática.</p>
                     <ul>
                         <li>Variáveis e tipos de dados</li>
-                        <li>Estruturas condicionais</li>
-                        <li>Laços de repetição</li>
+                        <li>Estruturas de controle</li>
+                        <li>Exercícios com problemas reais</li>
                     </ul>
+                    <div class="card-footer">
+                        <span>Clique para ver projetos desta disciplina</span>
+                    </div>
                 </div>
                 
-                <div class="disciplina-card">
+                <div class="disciplina-card" onclick="location.href='pages/disciplinas/fundamentos.html'">
                     <span class="semestre">1º Semestre</span>
                     <h3>Fundamentos de TI</h3>
-                    <p>Conceitos básicos de hardware, software e sistemas operacionais.</p>
+                    <p>Ministrada pelo Prof. [Nome], com laboratório prático.</p>
                     <ul>
-                        <li>Arquitetura de computadores</li>
+                        <li>Montagem e manutenção</li>
                         <li>Sistemas operacionais</li>
-                        <li>Redes de computadores</li>
+                        <li>Redes locais</li>
                     </ul>
+                    <div class="card-footer">
+                        <span>Clique para ver projetos desta disciplina</span>
+                    </div>
                 </div>
                 
-                <div class="disciplina-card">
+                <div class="disciplina-card" onclick="location.href='pages/disciplinas/banco-dados.html'">
                     <span class="semestre">2º Semestre</span>
                     <h3>Banco de Dados</h3>
-                    <p>Introdução aos sistemas de gerenciamento de bancos de dados relacionais.</p>
+                    <p>Ministrada pelo Prof. [Nome], com casos reais.</p>
                     <ul>
                         <li>Modelo relacional</li>
-                        <li>SQL básico e avançado</li>
-                        <li>Normalização de dados</li>
+                        <li>SQL com MySQL</li>
+                        <li>Projeto para empresa local</li>
                     </ul>
+                    <div class="card-footer">
+                        <span>Clique para ver projetos desta disciplina</span>
+                    </div>
                 </div>
-                
-                <!-- Adicione mais disciplinas aqui -->
+            </div>
+            <div class="ver-todas">
+                <a href="pages/disciplinas/todas.html" class="btn-ver-todas">Ver todas as 12 disciplinas do curso</a>
             </div>
         </section>
         
         <section id="demonstracoes">
             <h2>Demonstrações Práticas</h2>
-            <div id="code-demo">
-                <h3>Editor de Código Interativo</h3>
-                <div style="background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 5px; font-family: monospace;">
-                    <pre id="code-sample">// Exemplo de código JavaScript
-function calcularMedia(notas) {
-    let soma = 0;
-    for (let nota of notas) {
-        soma += nota;
-    }
-    return soma / notas.length;
-}
-
-const notas = [7.5, 8.0, 6.5, 9.0];
-console.log("Média:", calcularMedia(notas));</pre>
+            <div class="demo-grid">
+                <div class="demo-card" onclick="location.href='pages/demonstracoes/programacao.html'">
+                    <i class="fas fa-laptop-code demo-icon"></i>
+                    <h3>Programação Básica</h3>
+                    <p>Experimente nosso ambiente de aprendizado interativo</p>
                 </div>
-                <button onclick="runCode()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: #6e48aa; color: white; border: none; border-radius: 4px; cursor: pointer;">Executar Código</button>
-                <div id="output" style="margin-top: 1rem; padding: 1rem; background: #f0f0f0; border-radius: 4px;"></div>
+                
+                <div class="demo-card" onclick="location.href='pages/demonstracoes/web.html'">
+                    <i class="fas fa-globe demo-icon"></i>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Veja projetos reais de alunos</p>
+                </div>
+                
+                <div class="demo-card" onclick="location.href='pages/demonstracoes/banco-dados.html'">
+                    <i class="fas fa-database demo-icon"></i>
+                    <h3>Banco de Dados</h3>
+                    <p>Interaja com nosso simulador</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="depoimentos">
+            <h2>O que dizem nossos alunos</h2>
+            <div class="depoimentos-carrossel">
+                <!-- Depoimentos serão carregados via JavaScript -->
+            </div>
+            <div class="ver-depoimentos">
+                <a href="pages/depoimentos.html" class="btn-depoimentos">Assista todos os depoimentos</a>
             </div>
         </section>
         
         <section id="quiz">
-            <h2>Você tem perfil para DS?</h2>
-            <div id="quiz-container">
-                <div id="quiz-question">
-                    <h3>Pergunta 1/5</h3>
-                    <p>Você gosta de resolver problemas lógicos e quebra-cabeças?</p>
-                    <button onclick="answerQuiz(true)">Sim</button>
-                    <button onclick="answerQuiz(false)">Não</button>
-                </div>
-                <div id="quiz-result" style="display: none;">
-                    <h3>Seu Resultado</h3>
-                    <p id="result-text"></p>
-                </div>
+            <h2>Descubra se você tem perfil para DS</h2>
+            <div class="quiz-intro">
+                <p>Responda nosso quiz de 5 perguntas e descubra como o curso se alinha com seu perfil!</p>
+                <a href="pages/quiz.html" class="btn-iniciar-quiz">Iniciar Quiz Completo</a>
             </div>
         </section>
     </div>
     
     <footer>
         <div class="container">
-            <p>Projeto TCC - Curso de Desenvolvimento de Sistemas</p>
-            <p>© 2023 - Todos os direitos reservados</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Localização</h3>
+                    <p>ETEC [Nome da Escola]</p>
+                    <p>Rua Exemplo, 123 - Bairro</p>
+                    <p>Cidade - SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Email: ds@etec.com.br</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Projeto TCC - Curso de Desenvolvimento de Sistemas - ETEC [Nome] © 2023</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Código JavaScript para as interações
-        function runCode() {
-            const code = document.getElementById('code-sample').textContent;
-            const outputDiv = document.getElementById('output');
-            
-            try {
-                // Criamos uma nova função a partir do código e a executamos
-                const func = new Function(code);
-                const originalLog = console.log;
-                let logOutput = '';
-                
-                // Sobrescrevemos console.log para capturar a saída
-                console.log = function(message) {
-                    logOutput += message + '\n';
-                };
-                
-                // Executamos o código
-                func();
-                
-                // Restauramos o console.log original
-                console.log = originalLog;
-                
-                // Mostramos a saída
-                outputDiv.textContent = logOutput || 'Código executado com sucesso (sem saída no console)';
-            } catch (error) {
-                outputDiv.textContent = 'Erro: ' + error.message;
-            }
-        }
-        
-        // Variáveis para o quiz
-        let quizAnswers = [];
-        let currentQuestion = 0;
-        const questions = [
-            "Você gosta de resolver problemas lógicos e quebra-cabeças?",
-            "Tem interesse em aprender como os aplicativos e sites funcionam?",
-            "Você é uma pessoa paciente para resolver problemas complexos?",
-            "Gosta de trabalhar em equipe em projetos colaborativos?",
-            "Tem curiosidade sobre novas tecnologias e inovações?"
-        ];
-        
-        function answerQuiz(answer) {
-            quizAnswers.push(answer);
-            currentQuestion++;
-            
-            if (currentQuestion < questions.length) {
-                document.querySelector('#quiz-question h3').textContent = `Pergunta ${currentQuestion + 1}/${questions.length}`;
-                document.querySelector('#quiz-question p').textContent = questions[currentQuestion];
-            } else {
-                showQuizResult();
-            }
-        }
-        
-        function showQuizResult() {
-            const yesCount = quizAnswers.filter(a => a).length;
-            const percentage = (yesCount / questions.length) * 100;
-            
-            document.getElementById('quiz-question').style.display = 'none';
-            const resultDiv = document.getElementById('quiz-result');
-            resultDiv.style.display = 'block';
-            
-            let resultText = `Você respondeu Sim a ${yesCount} de ${questions.length} perguntas. `;
-            
-            if (percentage >= 80) {
-                resultText += "Você tem um excelente perfil para o curso de DS!";
-            } else if (percentage >= 50) {
-                resultText += "Você tem um bom perfil para o curso de DS, mas pode precisar desenvolver algumas habilidades.";
-            } else {
-                resultText += "O curso de DS pode ser desafiador para você, mas com dedicação você pode ter sucesso!";
-            }
-            
-            document.getElementById('result-text').textContent = resultText;
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
