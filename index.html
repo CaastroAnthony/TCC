@@ -3,169 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descubra o Curso de DS - ETEC [Nome da Escola]</title>
+    <title>Curso de Desenvolvimento de Sistemas</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo-escola">
-                <img src="assets/images/logo-escola.png" alt="Logo da Escola">
-                <div>
-                    <h1>Descubra o Curso de Desenvolvimento de Sistemas</h1>
-                    <p class="subtitle">Tudo o que você precisa saber antes de ingressar na ETEC [Nome da Escola]</p>
+            <div class="header-content">
+                <img src="" class="header-logo">
+                <div class="header-text">
+                    <h1 class="header-title">Curso de Desenvolvimento de Sistemas</h1>
+                    <p class="header-subtitle">Informações sobre o curso técnico</p>
                 </div>
             </div>
         </div>
     </header>
     
-    <nav>
+    <nav class="main-nav">
         <div class="container">
-            <ul class="nav-links">
-                <li><a href="pages/sobre.html"><i class="fas fa-info-circle"></i> Sobre o Curso</a></li>
-                <li><a href="pages/disciplinas/todas.html"><i class="fas fa-book"></i> Disciplinas</a></li>
-                <li><a href="pages/demonstracoes/programacao.html"><i class="fas fa-code"></i> Demonstrações</a></li>
-                <li><a href="pages/depoimentos.html"><i class="fas fa-comments"></i> Depoimentos</a></li>
-                <li><a href="pages/quiz.html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="pages/sobre.html" class="nav-link"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li class="nav-item"><a href="pages/disciplinas/todas.html" class="nav-link"><i class="fas fa-book"></i> Disciplinas</a></li>
+                <li class="nav-item"><a href="pages/quiz.html" class="nav-link"><i class="fas fa-question-circle"></i> Quiz</a></li>
             </ul>
         </div>
     </nav>
     
     <div class="container">
-        <section id="sobre">
-            <h2>Sobre o Curso de DS na Nossa Escola</h2>
-            <div class="sobre-content">
-                <img src="assets/images/laboratorio.jpg" alt="Laboratório de Informática" class="sobre-imagem">
-                <div>
-                    <p>O curso de Desenvolvimento de Sistemas na ETEC [Nome] prepara profissionais para o mercado de trabalho local, com foco nas necessidades das empresas da região.</p>
-                    <ul>
-                        <li>Duração: 3 semestres</li>
-                        <li>Período: Matutino/Noturno</li>
-                        <li>Infraestrutura: 2 laboratórios exclusivos</li>
-                    </ul>
-                    <a href="pages/sobre.html" class="btn-saiba-mais">Saiba mais sobre nossa estrutura</a>
+        <section class="course-about">
+            <h2 class="section-title">Sobre o Curso</h2>
+            <div class="about-content">
+                <img src="" class="about-image">
+                <div class="about-text">
+                    <p class="about-description">O curso técnico em Desenvolvimento de Sistemas prepara profissionais para atuar no mercado de tecnologia.</p>
+                    <a href="pages/sobre.html" class="main-button">Mais informações</a>
                 </div>
             </div>
         </section>
         
-        <section id="disciplinas">
-            <h2>Disciplinas do Curso</h2>
-            <div class="disciplinas-grid">
-                <div class="disciplina-card" onclick="location.href='pages/disciplinas/logica.html'">
-                    <span class="semestre">1º Semestre</span>
-                    <h3>Lógica de Programação</h3>
-                    <p>Ministrada pelo Prof. [Nome], com metodologia prática.</p>
-                    <ul>
-                        <li>Variáveis e tipos de dados</li>
-                        <li>Estruturas de controle</li>
-                        <li>Exercícios com problemas reais</li>
-                    </ul>
-                    <div class="card-footer">
-                        <span>Clique para ver projetos desta disciplina</span>
-                    </div>
+        <section class="course-subjects">
+            <h2 class="section-title">Disciplinas</h2>
+            <div class="subjects-grid">
+                <div class="subject-card" onclick="location.href='pages/disciplinas/frontend.html'">
+                    <h3 class="subject-title">Desenvolvimento Front-End</h3>
+                    <p class="subject-description">Fundamentos</p>
                 </div>
                 
-                <div class="disciplina-card" onclick="location.href='pages/disciplinas/fundamentos.html'">
-                    <span class="semestre">1º Semestre</span>
-                    <h3>Fundamentos de TI</h3>
-                    <p>Ministrada pelo Prof. [Nome], com laboratório prático.</p>
-                    <ul>
-                        <li>Montagem e manutenção</li>
-                        <li>Sistemas operacionais</li>
-                        <li>Redes locais</li>
-                    </ul>
-                    <div class="card-footer">
-                        <span>Clique para ver projetos desta disciplina</span>
-                    </div>
+                <div class="subject-card" onclick="location.href='pages/disciplinas/backend.html'">
+                    <h3 class="subject-title">Desenvolvimento Back-End</h3>
+                    <p class="subject-description">Bases da tecnologia</p>
                 </div>
                 
-                <div class="disciplina-card" onclick="location.href='pages/disciplinas/banco-dados.html'">
-                    <span class="semestre">2º Semestre</span>
-                    <h3>Banco de Dados</h3>
-                    <p>Ministrada pelo Prof. [Nome], com casos reais.</p>
-                    <ul>
-                        <li>Modelo relacional</li>
-                        <li>SQL com MySQL</li>
-                        <li>Projeto para empresa local</li>
-                    </ul>
-                    <div class="card-footer">
-                        <span>Clique para ver projetos desta disciplina</span>
-                    </div>
+                <div class="subject-card" onclick="location.href='pages/disciplinas/bancodados.html'">
+                    <h3 class="subject-title">Banco de Dados</h3>
+                    <p class="subject-description">Introdução a bancos de dados</p>
                 </div>
             </div>
-            <div class="ver-todas">
-                <a href="pages/disciplinas/todas.html" class="btn-ver-todas">Ver todas as 12 disciplinas do curso</a>
+            <div class="all-subjects-link">
+                <a href="pages/disciplinas/todas.html" class="secondary-button">Ver todas as disciplinas</a>
             </div>
         </section>
         
-        <section id="demonstracoes">
-            <h2>Demonstrações Práticas</h2>
-            <div class="demo-grid">
-                <div class="demo-card" onclick="location.href='pages/demonstracoes/programacao.html'">
-                    <i class="fas fa-laptop-code demo-icon"></i>
-                    <h3>Programação Básica</h3>
-                    <p>Experimente nosso ambiente de aprendizado interativo</p>
-                </div>
-                
-                <div class="demo-card" onclick="location.href='pages/demonstracoes/web.html'">
-                    <i class="fas fa-globe demo-icon"></i>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Veja projetos reais de alunos</p>
-                </div>
-                
-                <div class="demo-card" onclick="location.href='pages/demonstracoes/banco-dados.html'">
-                    <i class="fas fa-database demo-icon"></i>
-                    <h3>Banco de Dados</h3>
-                    <p>Interaja com nosso simulador</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="depoimentos">
-            <h2>O que dizem nossos alunos</h2>
-            <div class="depoimentos-carrossel">
-                <!-- Depoimentos serão carregados via JavaScript -->
-            </div>
-            <div class="ver-depoimentos">
-                <a href="pages/depoimentos.html" class="btn-depoimentos">Assista todos os depoimentos</a>
-            </div>
-        </section>
-        
-        <section id="quiz">
-            <h2>Descubra se você tem perfil para DS</h2>
-            <div class="quiz-intro">
-                <p>Responda nosso quiz de 5 perguntas e descubra como o curso se alinha com seu perfil!</p>
-                <a href="pages/quiz.html" class="btn-iniciar-quiz">Iniciar Quiz Completo</a>
+        <section class="course-quiz">
+            <h2 class="section-title">Quiz</h2>
+            <div class="quiz-content">
+                <a href="pages/quiz.html" class="main-button">Fazer quiz</a>
             </div>
         </section>
     </div>
     
-    <footer>
+    <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Localização</h3>
-                    <p>ETEC [Nome da Escola]</p>
-                    <p>Rua Exemplo, 123 - Bairro</p>
-                    <p>Cidade - SP</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contato</h3>
-                    <p>Email: ds@etec.com.br</p>
-                    <p>Telefone: (11) 1234-5678</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Redes Sociais</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+                    <h3 class="footer-title">Contato</h3>
+                    <p class="footer-text">Email:</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Projeto TCC - Curso de Desenvolvimento de Sistemas - ETEC [Nome] © 2023</p>
+                <p class="footer-copyright">Curso de Desenvolvimento de Sistemas © 2025</p>
             </div>
         </div>
     </footer>
