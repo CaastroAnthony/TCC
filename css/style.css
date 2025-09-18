@@ -1,5 +1,6 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background-color: #0d0d0d;
   color: #f5f5f5;
@@ -13,28 +14,38 @@ body.light-mode {
   color: #222;
 }
 
+/* ===== HEADER ===== */
 header {
   text-align: center;
-  padding: 20px;
-  border-bottom: 1px solid #222;
+  padding: 60px 20px;
+  border-bottom: 2px solid #222;
+  background-image: url("../imagem header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 header h1 {
+  font-size: 2rem;
   color: #00aaff;
-  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
 body.light-mode header h1 {
   color: #0077cc;
 }
 
+/* ===== NAVEGAÇÃO ===== */
 .header-bottom {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   gap: 20px;
   background-color: #1a1a1a;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 8px;
+  position: relative;
 }
 
 body.light-mode .header-bottom {
@@ -46,28 +57,39 @@ nav a {
   color: #f5f5f5;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #00aaff;
+  color: #fff;
 }
 
 body.light-mode nav a {
   color: #333;
 }
 
-nav a:hover {
-  color: #00aaff;
-}
-
 body.light-mode nav a:hover {
-  color: #0077cc;
+  background: #0077cc;
+  color: #fff;
 }
 
+/* Botão de alternar tema */
 .theme-toggle {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   background: #00aaff;
   color: #fff;
   border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
   cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
 .theme-toggle:hover {
@@ -82,6 +104,7 @@ body.light-mode .theme-toggle:hover {
   background: #005fa3;
 }
 
+/* ===== CONTEÚDO PRINCIPAL ===== */
 main {
   max-width: 900px;
   margin: 40px auto;
@@ -90,39 +113,59 @@ main {
 
 section {
   margin-bottom: 40px;
+  padding: 20px;
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 8px;
+}
+
+body.light-mode section {
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 h2 {
   color: #00aaff;
-  text-align: center;
   margin-bottom: 15px;
+  border-left: 4px solid #00aaff;
+  padding-left: 10px;
 }
 
 body.light-mode h2 {
   color: #0077cc;
+  border-left: 4px solid #0077cc;
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
-  text-align: left;
 }
 
-ul li::before {
-  content: "• ";
+ul li {
+  margin: 8px 0;
+}
+
+ul li a {
   color: #00aaff;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-body.light-mode ul li::before {
+ul li a:hover {
+  text-decoration: underline;
+}
+
+body.light-mode ul li a {
   color: #0077cc;
 }
 
+/* ===== RODAPÉ ===== */
 footer {
   text-align: center;
   padding: 15px;
   background: #1a1a1a;
   color: #fff;
   margin-top: 30px;
+  font-size: 0.9rem;
 }
 
 body.light-mode footer {
