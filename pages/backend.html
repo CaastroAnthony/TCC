@@ -4,28 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programação Backend</title>
+    <title>Programação Back-End</title>
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body class="dark-mode">
     <header>
-        <h1>O que é Backend?</h1>
+        <h1>Back-End</h1>
         <div class="header-bottom"></div>
     </header>
 
+    <!-- ===== BARRA DE VOLTAR ===== -->
+    <div class="header-bottom">
+        <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+        <button onclick="history.back()">Voltar</button>
+    </div>
+
     <main>
         <section>
+            <h2>O que é Back-End?</h2>
+            <p>
+                O <strong>Back-End</strong> é a parte de um sistema que o usuário não vê diretamente. 
+                Ele é responsável pela <em>lógica, regras de negócio, armazenamento e segurança</em>. 
+                Em resumo, é no Back-End que os dados são processados e armazenados.
+            </p>
 
-            <p>Falando de Backend..</p>
-        </section>
-        <section id="conteudo">
+            <p><strong>Principais responsabilidades:</strong></p>
             <ul>
-                <li><a href="../index.html">Voltar para a página inícial</a></li>
+                <li>Gerenciar bancos de dados e informações;</li>
+                <li>Criar APIs para comunicação com o Front-End;</li>
+                <li>Implementar regras de negócio e autenticação de usuários;</li>
+                <li>Garantir a segurança e escalabilidade das aplicações.</li>
             </ul>
-    </main>
 
+            <p><strong>Principais tecnologias:</strong></p>
+            <ul>
+                <li><strong>Node.js:</strong> execução de JavaScript no servidor.</li>
+                <li><strong>Python (Django/Flask):</strong> frameworks populares e robustos.</li>
+                <li><strong>Java (Spring Boot):</strong> usado em sistemas corporativos.</li>
+                <li><strong>PHP (Laravel):</strong> muito usado em sites e aplicações web.</li>
+                <li><strong>Bancos de Dados:</strong> MySQL, PostgreSQL, MongoDB, Redis.</li>
+            </ul>
+
+            <p><strong>Resumo :</strong> <em>Back-End = tudo que acontece “por trás das câmeras” para que o sistema funcione.</em></p>
+        </section>
+
+        <section id="conteudo">
+            <h1>Comandos e Conceitos Básicos de Back-End</h1>
+
+            <h2>Node.js (JavaScript no servidor)</h2>
+            <table>
+                <tr><th>Comando</th><th>Para que serve</th></tr>
+                <tr><td>npm init</td><td>Inicia um projeto Node.js.</td></tr>
+                <tr><td>npm install express</td><td>Instala o framework Express.</td></tr>
+                <tr><td>const express = require("express")</td><td>Importa o Express no código.</td></tr>
+                <tr><td>app.get("/", ...)</td><td>Cria uma rota de acesso.</td></tr>
+                <tr><td>app.listen(3000)</td><td>Faz o servidor rodar na porta 3000.</td></tr>
+            </table>
+
+            <h2>Python (Flask/Django)</h2>
+            <table>
+                <tr><th>Comando</th><th>Para que serve</th></tr>
+                <tr><td>pip install flask</td><td>Instala o framework Flask.</td></tr>
+                <tr><td>from flask import Flask</td><td>Importa a biblioteca Flask.</td></tr>
+                <tr><td>@app.route("/")</td><td>Cria uma rota no servidor.</td></tr>
+                <tr><td>python manage.py runserver</td><td>Executa o servidor no Django.</td></tr>
+            </table>
+
+            <h2>Banco de Dados (SQL)</h2>
+            <table>
+                <tr><th>Comando</th><th>Para que serve</th></tr>
+                <tr><td>CREATE DATABASE nome;</td><td>Cria um banco de dados.</td></tr>
+                <tr><td>CREATE TABLE tabela (...);</td><td>Cria uma tabela.</td></tr>
+                <tr><td>SELECT * FROM tabela;</td><td>Consulta todos os registros.</td></tr>
+                <tr><td>INSERT INTO tabela VALUES (...);</td><td>Insere um registro.</td></tr>
+                <tr><td>UPDATE tabela SET coluna=valor;</td><td>Atualiza dados existentes.</td></tr>
+                <tr><td>DELETE FROM tabela WHERE ...;</td><td>Remove registros.</td></tr>
+            </table>
+
+            <h2>Conceitos Importantes</h2>
+            <table>
+                <tr><th>Conceito</th><th>Para que serve</th></tr>
+                <tr><td>API REST</td><td>Permite a comunicação entre sistemas via HTTP.</td></tr>
+                <tr><td>CRUD</td><td>Operações básicas em bancos de dados: Create, Read, Update, Delete.</td></tr>
+                <tr><td>Autenticação</td><td>Verificação de usuários (login/senha, tokens).</td></tr>
+                <tr><td>Middleware</td><td>Funções que interceptam requisições e respostas no servidor.</td></tr>
+                <tr><td>Deploy</td><td>Colocar o sistema no ar (servidor ou nuvem).</td></tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>© 2025 Plataforma Web de Apoio Para Estudantes de Cursos Técnicos | Desenvolvido por Agatha Albino, Anthony
+                Castro, Gabriela Falcão, José Nicolas, Maria Luiza Santos e Viviane Pereira</p>
+        </footer>
+    </main>
 
     <script src="../js/script.js"></script>
 </body>

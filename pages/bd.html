@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelagem de banco de dados</title>
+    <title>Banco de Dados</title>
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
-
 <body class="dark-mode">
     <header>
-        <h1>O que é Modelagem de Banco de Dados?</h1>
+        <h1>Banco de Dados</h1>
         <div class="header-bottom"></div>
     </header>
 
+    <!-- ===== BARRA DE VOLTAR ===== -->
+    <div class="header-bottom">
+        <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+        <button onclick="history.back()">Voltar</button>
+    </div>
+
     <main>
         <section>
+            <h2>O que é Banco de Dados?</h2>
+            <p>
+                Um <strong>Banco de Dados</strong> é um sistema organizado para armazenar, gerenciar e recuperar informações de forma eficiente. 
+                Pode ser <strong>relacional</strong> (tabelas com relações) ou <strong>não relacional</strong> (NoSQL).
+            </p>
 
-            <p>Em modelagem de Banco de Dados</p>
-        </section>
-        <section id="conteudo">
-            <h2></h2>
+            <p><strong>Principais tipos de banco de dados:</strong></p>
             <ul>
-
-                <li><a href="../index.html">Voltar para a página inícial</a></li>
+                <li><strong>MySQL:</strong> Sistema de banco de dados relacional amplamente usado.</li>
+                <li><strong>PostgreSQL:</strong> Relacional avançado, com suporte a recursos complexos.</li>
+                <li><strong>MongoDB:</strong> Banco NoSQL orientado a documentos.</li>
+                <li><strong>SQLite:</strong> Banco de dados leve, usado em apps móveis.</li>
             </ul>
-    </main>
 
+            <p><strong>Resumo :</strong> <em>BD Relacional = tabelas, SQL; BD Não Relacional = documentos, chaves e valores.</em></p>
+        </section>
+
+        <section id="conteudo">
+            <h1>Comandos e Conceitos Básicos de Banco de Dados</h1>
+
+            <h2>SQL (MySQL/PostgreSQL)</h2>
+            <table>
+                <tr><th>Comando</th><th>Para que serve</th></tr>
+                <tr><td>CREATE DATABASE nome;</td><td>Cria um novo banco de dados.</td></tr>
+                <tr><td>CREATE TABLE tabela (...);</td><td>Cria uma nova tabela.</td></tr>
+                <tr><td>INSERT INTO tabela VALUES (...);</td><td>Insere dados na tabela.</td></tr>
+                <tr><td>SELECT * FROM tabela;</td><td>Consulta todos os dados da tabela.</td></tr>
+                <tr><td>UPDATE tabela SET coluna=valor;</td><td>Atualiza valores de uma tabela.</td></tr>
+            </table>
+
+            <h2>MongoDB (NoSQL)</h2>
+            <table>
+                <tr><th>Comando</th><th>Para que serve</th></tr>
+                <tr><td>use nomeDB</td><td>Seleciona ou cria um banco de dados.</td></tr>
+                <tr><td>db.createCollection("nome")</td><td>Cria uma coleção.</td></tr>
+                <tr><td>db.nome.insertOne({campo: valor})</td><td>Insere um documento na coleção.</td></tr>
+                <tr><td>db.nome.find()</td><td>Consulta documentos da coleção.</td></tr>
+                <tr><td>db.nome.updateOne(...)</td><td>Atualiza documentos.</td></tr>
+            </table>
+
+            <h2>Conceitos Importantes</h2>
+            <table>
+                <tr><th>Conceito</th><th>Para que serve</th></tr>
+                <tr><td>CRUD</td><td>Create, Read, Update, Delete — operações básicas de um BD.</td></tr>
+                <tr><td>Chave Primária</td><td>Identificador único de registros em uma tabela.</td></tr>
+                <tr><td>Índice</td><td>Acelera consultas em colunas específicas.</td></tr>
+                <tr><td>Relacionamento</td><td>Conexão entre tabelas (1:1, 1:N, N:N).</td></tr>
+                <tr><td>Backup</td><td>Cópia de segurança do banco de dados.</td></tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>© 2025 Plataforma Web de Apoio Para Estudantes de Cursos Técnicos | Desenvolvido por Agatha Albino, Anthony Castro, Gabriela Falcão, José Nicolas, Maria Luiza Santos e Viviane Pereira</p>
+        </footer>
+    </main>
 
     <script src="../js/script.js"></script>
 </body>
-
 </html>

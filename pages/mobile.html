@@ -4,30 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programação Frontend</title>
+    <title>Desenvolvimento Mobile</title>
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body class="dark-mode">
     <header>
-        <h1>O que é Programação Mobile?</h1>
+        <h1>Desenvolvimento Mobile</h1>
         <div class="header-bottom"></div>
     </header>
 
+    <!-- ===== BARRA DE VOLTAR ===== -->
+    <div class="header-bottom">
+        <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+        <button onclick="history.back()">Voltar</button>
+    </div>
+
     <main>
         <section>
+            <h2>O que é Desenvolvimento Mobile?</h2>
+            <p>
+                O <strong>Desenvolvimento Mobile</strong> é a criação de aplicativos para dispositivos móveis 
+                como <em>smartphones e tablets</em>. Ele pode ser feito de forma <strong>nativa</strong> 
+                (linguagens específicas para cada sistema operacional) ou <strong>híbrida</strong> 
+                (um único código que roda em Android e iOS).
+            </p>
 
-            <p>Programação Mobile..</p>
-        </section>
-        <section id="conteudo">
-            <h2></h2>
+            <p><strong>Principais tecnologias:</strong></p>
             <ul>
-
-                <li><a href="../index.html">Voltar para a página inícial</a></li>
+                <li><strong>Android:</strong> desenvolvido principalmente em <em>Kotlin</em> ou <em>Java</em>.</li>
+                <li><strong>iOS:</strong> desenvolvido com <em>Swift</em>.</li>
+                <li><strong>React Native:</strong> cria apps híbridos usando JavaScript.</li>
+                <li><strong>Flutter:</strong> framework do Google que usa a linguagem Dart.</li>
             </ul>
-    </main>
 
+            <p><strong>Resumo :</strong> <em>Mobile = aplicativos que rodam no celular. Nativo = mais performance, Híbrido = código único para várias plataformas.</em></p>
+        </section>
+
+        <section id="conteudo">
+            <h1>Comandos e Conceitos Básicos de Mobile</h1>
+
+            <h2>React Native (JavaScript)</h2>
+            <table>
+                <tr><th>Comando</th><th>Para que serve</th></tr>
+                <tr><td>npx react-native init app</td><td>Cria um novo projeto React Native.</td></tr>
+                <tr><td>npm install</td><td>Instala as dependências do projeto.</td></tr>
+                <tr><td>npx react-native run-android</td><td>Executa o app no Android.</td></tr>
+                <tr><td>npx react-native run-ios</td><td>Executa o app no iOS.</td></tr>
+                <tr><td>import { Text, View } from "react-native"</td><td>Importa componentes básicos.</td></tr>
+            </table>
+
+            <h2>Flutter (Dart)</h2>
+            <table>
+                <tr><th>Comando</th><th>Para que serve</th></tr>
+                <tr><td>flutter create app</td><td>Cria um novo projeto Flutter.</td></tr>
+                <tr><td>flutter run</td><td>Executa o app no emulador/dispositivo.</td></tr>
+                <tr><td>MaterialApp()</td><td>Define a estrutura principal do app.</td></tr>
+                <tr><td>Scaffold()</td><td>Cria uma tela padrão com barra superior e corpo.</td></tr>
+                <tr><td>setState()</td><td>Atualiza a interface quando os dados mudam.</td></tr>
+            </table>
+
+            <h2>Kotlin (Android Nativo)</h2>
+            <table>
+                <tr><th>Comando</th><th>Para que serve</th></tr>
+                <tr><td>class MainActivity : AppCompatActivity()</td><td>Classe principal da aplicação Android.</td></tr>
+                <tr><td>setContentView(R.layout.activity_main)</td><td>Define o layout da tela.</td></tr>
+                <tr><td>findViewById&lt;Button&gt;(R.id.botao)</td><td>Busca um elemento da tela pelo ID.</td></tr>
+                <tr><td>button.setOnClickListener { ... }</td><td>Define ação ao clicar em um botão.</td></tr>
+                <tr><td>Toast.makeText(...)</td><td>Exibe uma mensagem rápida na tela.</td></tr>
+            </table>
+
+            <h2>Conceitos Importantes</h2>
+            <table>
+                <tr><th>Conceito</th><th>Para que serve</th></tr>
+                <tr><td>APK</td><td>Arquivo do app Android pronto para instalação.</td></tr>
+                <tr><td>Emulador</td><td>Simulador de celular para testar apps no computador.</td></tr>
+                <tr><td>Play Store / App Store</td><td>Plataformas de distribuição de apps.</td></tr>
+                <tr><td>UI/UX</td><td>Interface e experiência do usuário.</td></tr>
+                <tr><td>Notificações Push</td><td>Mensagens enviadas diretamente para o celular do usuário.</td></tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>© 2025 Plataforma Web de Apoio Para Estudantes de Cursos Técnicos | Desenvolvido por Agatha Albino, Anthony
+                Castro, Gabriela Falcão, José Nicolas, Maria Luiza Santos e Viviane Pereira</p>
+        </footer>
+    </main>
 
     <script src="../js/script.js"></script>
 </body>
